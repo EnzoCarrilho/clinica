@@ -8,19 +8,19 @@ public class Clinica {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Hello World!");
-		
 		// Criando um objeto paciente
 		Paciente p1 = new Paciente();
-		p1.nome = "Ana Maria";
-		p1.altura = 1.65;
+		p1.setNome("Jose");
+		p1.setAltura(1.65); 
 		p1.peso = 51;
 		p1.telefone = "(11)99999-8888";
 		p1.dataNascimento = LocalDate.of(2003, 7, 15);
 		
+		
+		
 		Paciente p2 = new Paciente();
-		p2.nome = "Enzo Felix";
-		p2.altura = 1.63;
+		p2.setNome("Enzo Felix");
+		p2.setAltura(1.63);
 		p2.peso = 50;
 		p2.telefone = "(11)91234-5678";
 		p2.dataNascimento = LocalDate.of(2005, 9, 25);
@@ -28,6 +28,7 @@ public class Clinica {
 		System.out.println("Ficha dos Pacientes:");
 		p1.mostrarFichaDoPaciente();
 		p2.mostrarFichaDoPaciente();
+		
 		
 		
 	}
